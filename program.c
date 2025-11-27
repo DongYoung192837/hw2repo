@@ -1,10 +1,12 @@
 #include <stdio.h>
 
-int sum(int n)
+int fib(int n)
 {
   if (n == 0) return 0;
-  return n + sum(n-1);
+  if (n == 1) return 1;
+  return fib(n-1) + fib(n-2);
 }
+// fib함수 추가완료
 
 int main()
 {
